@@ -124,6 +124,10 @@ alias ll="ls -lah"
 alias lh="ls -a | egrep '^\.'"
 alias copy="cp"
 alias f='find . | grep'
+
+# thefuck
+eval $(thefuck --alias)
+
 # fzf with bat
 alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 
