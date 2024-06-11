@@ -149,3 +149,6 @@ alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 # Shutdown information
 alias crashlog="log show --predicate 'eventMessage contains \"Previous shutdown cause\"' --last 24h"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
