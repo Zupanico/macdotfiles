@@ -65,7 +65,6 @@ alias sz=" source ~/.zshrc; echo '~/.zshrc sourced'"
 # VSCode zshrc
 alias cz="code ~/.zshrc"
 
-
 # Other useful alias
 alias grep='grep --color'
 alias c="clear"
@@ -98,6 +97,9 @@ alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 # Shutdown information
 alias crashlog="log show --predicate 'eventMessage contains \"Previous shutdown cause\"' --last 24h"
+
+# Brew Bundle file
+alias brew-file="brew bundle dump --file=~/.config/Brewfile --force"
 
 ######################
 
