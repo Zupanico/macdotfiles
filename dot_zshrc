@@ -62,6 +62,8 @@ fi
 # quickly edit and source .zshrc
 alias nz="nano ~/.zshrc"
 alias sz=" source ~/.zshrc; echo '~/.zshrc sourced'"
+alias bz="bat ~/.zshrc"
+
 # VSCode zshrc
 alias cz="code ~/.zshrc"
 
