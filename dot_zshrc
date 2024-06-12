@@ -120,11 +120,18 @@ chrome() {
   open https://keep.google.com/
 }
 
-ip (){
+ip () {
   for ((i = 0; i < 6; i++)); 
   do
     ifconfig -a | egrep -A 7 "^en$i" | grep inet | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | head -n 1
   done
+}
+
+pms () {
+  open https://services-professionnels.pharmascience.com/ 
+  open https://pendopharm.com/
+  open https://carrieres.pharmascience.com/
+  open https://www.pharmascience.com/
 }
 
 #####################
