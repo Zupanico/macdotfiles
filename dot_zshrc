@@ -118,6 +118,7 @@ chrome() {
   open https://www.gmail.com
   open https://calendar.google.com/
   open https://keep.google.com/
+  open https://ti.beauvoir.ca/
 }
 
 ip () {
