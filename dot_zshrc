@@ -25,7 +25,7 @@ ZSH_DISABLE_COMPFIX=true
 export ZSH=$HOME/.oh-my-zsh
 
 # Plugins
-plugins=(git brew sudo web-search)
+plugins=(git brew sudo web-search python)
 
 source $ZSH/oh-my-zsh.sh
 
