@@ -103,6 +103,12 @@ alias crashlog="log show --predicate 'eventMessage contains \"Previous shutdown 
 # Brew Bundle file
 alias brew-file="brew bundle dump --file=~/.config/Brewfile --force"
 
+# Open git remote url
+alias giturl="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
+
+# Open finder (like windows)
+alias finder="open -a Finder"
+
 ######################
 
 
@@ -134,5 +140,6 @@ pms () {
   open https://carrieres.pharmascience.com/
   open https://www.pharmascience.com/
 }
+
 
 #####################
