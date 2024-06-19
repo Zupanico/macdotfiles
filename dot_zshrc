@@ -103,9 +103,6 @@ alias crashlog="log show --predicate 'eventMessage contains \"Previous shutdown 
 # Brew Bundle file
 alias brew-file="brew bundle dump --file=~/.config/Brewfile --force"
 
-# Open git remote url
-alias giturl="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
-
 # Open finder (like windows)
 alias finder="open -a Finder"
 
@@ -117,6 +114,7 @@ alias finder="open -a Finder"
 # Functions
 
 wttr() {
+    # Get the weather
     curl "https://wttr.in/${1:-sherbrooke}"
 }
 
@@ -128,6 +126,7 @@ chrome() {
 }
 
 ip () {
+  # List all IP addresses
   for ((i = 0; i < 6; i++)); 
   do
     ifconfig -a | egrep -A 7 "^en$i" | grep inet | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | head -n 1
@@ -135,10 +134,16 @@ ip () {
 }
 
 pms () {
+  # Open Pharmascience websites
   open https://services-professionnels.pharmascience.com/ 
   open https://pendopharm.com/
   open https://carrieres.pharmascience.com/
   open https://www.pharmascience.com/
+}
+
+giturl () {
+  # Open git remote url
+  open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
 }
 
 
