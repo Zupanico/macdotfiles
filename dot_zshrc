@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 ######################
 # iTerm2
-export ITERM="~/Library/Preferences/com.googlecode.iterm2.plist"
+export ITERMPLIST="~/Library/Preferences/com.googlecode.iterm2.plist"
 
 ######################
 
