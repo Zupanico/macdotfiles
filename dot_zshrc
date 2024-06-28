@@ -33,7 +33,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Plugins
-plugins=(git brew sudo zsh-autosuggestions zsh-syntax-highlighting web-search python copydir copyfile copybuffer history osx)
+plugins=(git brew sudo zsh-autosuggestions zsh-syntax-highlighting web-search python copypath copyfile copybuffer history macos)
 
 
 
