@@ -1,5 +1,5 @@
 # .zshrc
-export ZRC="~/.zshrc"
+export ZRC=$HOME/.zshrc
 
 ####################
 # Powerlevel10k #
