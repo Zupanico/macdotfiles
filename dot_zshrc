@@ -44,6 +44,17 @@ source $ZSH/oh-my-zsh.sh
 
 
 ######################
+# FZF-TAB-COMPLETION
+
+source $HOME/.oh-my-zsh/plugins/fzf-tab-completion/zsh/fzf-zsh-completion.sh
+bindkey '^I' fzf_completion
+
+
+######################
+
+
+
+######################
 # ENV MAN
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
