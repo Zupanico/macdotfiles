@@ -18,9 +18,6 @@ defaults write -globalDomain AppleLanguages -array fr-CA
 # System Preferences > Appearance
 ################################################################################
 
-# Appearance: Auto
-defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
-
 # Click in the scrollbar to: Jump to the spot that's clicked
 defaults write -globalDomain AppleScrollerPagingBehavior -bool true
 
@@ -92,9 +89,6 @@ defaults write com.apple.dock mineffect -string "scale"
 # Dock > Minimize windows into application icon
 defaults write com.apple.dock minimize-to-application -bool true
 
-# Dock > Automatically hide and show the Dock (delay)
-defaults write com.apple.dock autohide-delay -float 0
-
 # Dock > Hide recent applications in Dock
 defaults write com.apple.dock "show-recents" -bool false
 
@@ -103,6 +97,12 @@ defaults write -globalDomain AppleWindowTabbingMode -string "always"
 
 # Mission Control > Automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
+
+# Show hard drives on desktop
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+
+# Show connected servers on desktop
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 
 
 ################################################################################
