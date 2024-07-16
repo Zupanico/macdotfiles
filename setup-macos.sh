@@ -50,7 +50,7 @@ defaults write "com.apple.controlcenter" "NSStatusItem Visible Sound" -bool true
 # Control Centre Modules > Now Playing > Don't Show in Menu Bar 
 defaults write "com.apple.airplay" "NSStatusItem Visible NowPlaying" -bool false
 
-# Menu Bar Only > Clock Options > Show Date: Never
+# Menu Bar Only > Clock Options > Show Date : Always
 defaults write "com.apple.menuextra.clock" ShowDate -int 2
 
 # Menu Bar Only > Clock Options > Show tyhe day of a week
@@ -67,6 +67,10 @@ defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1
 #Ask Siri
 defaults write com.apple.Siri SiriPrefStashedStatusMenuVisible -bool false
 defaults write com.apple.Siri VoiceTriggerUserEnabled -bool false
+
+# Disable Siri Suggestions
+defaults write com.apple.Spotlight SiriSuggestionsEnabled -bool false
+
 
 
 ################################################################################
@@ -168,6 +172,12 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Finder > View > Show Path Bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# Search scope > Search the current folder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Show icon in the title bar
+defaults write com.apple.universalaccess "showWindowTitlebarIcons"
 
 
 # Kill affected apps
