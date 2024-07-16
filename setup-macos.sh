@@ -32,7 +32,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 
 
 ################################################################################
-# System Preferences > Control Centre
+# System Preferences > Control Center
 ################################################################################
 
 # Control Centre Modules > Bluetooth > Show in Menu Bar
@@ -55,6 +55,9 @@ defaults write "com.apple.menuextra.clock" ShowDayOfWeek -bool true
 
 # Menu Bar Only > Spotlight > Don't Show in Menu Bar
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1
+
+# Menu bar clock format
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\""
 
 
 ################################################################################
