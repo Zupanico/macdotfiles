@@ -165,7 +165,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # New Window on user home folder
-defaults write com.apple.finder NewWindowTargetPath -string "file:///Users/ngarant/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME"
 
 # Finder > View > As List
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
