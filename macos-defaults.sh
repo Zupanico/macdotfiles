@@ -1,3 +1,4 @@
+echo "Setting up macOS defaults..."
 ################################################################################
 # System Preferences > Sound
 ################################################################################
@@ -187,9 +188,11 @@ defaults write com.apple.universalaccess "showWindowTitlebarIcons"
 for app in "Dock" "Finder"; do
   killall "${app}" > /dev/null 2>&1
 done
+echo "Apps killed."
 
 # Change default keybinding for numpad "," to "."
 mkdir ~/Library/KeyBindings && cd ~/Library/KeyBindings && touch DefaultKeyBinding.dict && echo '{"#," = ("insertText:", ".");}' > DefaultKeyBinding.dict
+echo "Key binding changed successfully."
 
 # Done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
