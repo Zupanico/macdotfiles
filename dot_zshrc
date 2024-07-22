@@ -139,6 +139,10 @@ alias brew-file="brew bundle dump --file=~/.config/Brewfile --force"
 # Open finder (like windows)
 alias finder="open -a Finder"
 
+# Flush DNS
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+
 ######################
 
 
